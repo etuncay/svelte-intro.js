@@ -14,8 +14,9 @@ Hello World!
 ```html
 <script >
 	import IntroJs from "$lib/intro-js.svelte";
+</script>
 
-  <IntroJs>
+<IntroJs>
     <div data-title="Welcome!" data-intro="Hello World! 👋" class="card-demo">
         <div class="card shadow--md">
           <div class="card__image" data-intro="Intro.js can highlight on elements">
@@ -31,7 +32,7 @@ Hello World!
           </div>
         </div>
       </div>
-  </IntroJs>
+</IntroJs>
 ```
 
 
@@ -40,25 +41,23 @@ JSON configuration
 ```html
 <script >
 	import IntroJs from "$lib/intro-js.svelte";
-
-      
-    let options = {
-          steps: [{
-              title: 'Welcome',
-              intro: 'Hello World! 👋json'
-          },
-          {
-              selector: '.card-demo',
-              intro: 'This step focuses on an image json'
-          },
-          {
-              title: 'Farewell!',           
-              selector: '.card__image',
-              intro: 'And this is our final step! json'
-          }]
-        };
-  </script>
-  <IntroJs {options}>
+  let options = {
+    steps: [{
+        title: 'Welcome',
+        intro: 'Hello World! 👋json'
+      },
+      {
+        selector: '.card-demo',
+        intro: 'This step focuses on an image json'
+      },
+      {
+        title: 'Farewell!',           
+        selector: '.card__image',
+        intro: 'And this is our final step! json'
+      }]
+    };
+</script>
+<IntroJs {options}>
     <div data-title="Welcome!" data-intro="Hello World! 👋" class="card-demo">
         <div class="card shadow--md">
           <div class="card__image" data-intro="Intro.js can highlight on elements">
@@ -74,8 +73,7 @@ JSON configuration
           </div>
         </div>
       </div>
-  </IntroJs>
-
+</IntroJs>
 ```
 
 For introjs documentation and more examples
