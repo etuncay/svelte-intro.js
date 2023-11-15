@@ -1,6 +1,31 @@
 {
 	"name": "svelte-intro.js",
-	"version": "0.0.3",
+	"version": "0.0.4",
+	"license": "MIT",
+	"homepage": "https://github.com/etuncay/svelte-intro.js",
+	"description": "introjs library for svelte",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/etuncay/svelte-intro.js"
+	},
+	"bugs": {
+		"url": "https://github.com/etuncay/svelte-intro.js/issues"
+	},
+	"author": {
+		"name": "Emrullah TUNCAY",
+		"url": "https://github.com/etuncay"
+	},
+	"keywords": [
+		"svelte",
+		"sveltekit",
+		"onboarding",
+		"tour",
+		"introjs",
+		"intro",
+		"guide",
+		"walkthrough",
+		"user-onboarding"
+	],
 	"scripts": {
 		"dev": "vite dev",
 		"build": "vite build && npm run package",
